@@ -1,0 +1,15 @@
+.container-recursive {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.dynamic-form-container {
+  display: inline-block;
+}
+
+.dynamic-input-container {
+  display: block;
+  position: relative;
+  width: 100%;
+}

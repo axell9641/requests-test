@@ -1,0 +1,44 @@
+.label-input {
+  color: #acacac;
+  font-size: 12px;
+  margin-bottom: 0.4em;
+  width: 100%;
+}
+
+.disabled-label {
+  color: #D1DBFF;
+  font-size: 12px;
+  margin-bottom: 0.4em;
+  width: 100%;
+}
+
+.dynamic-input {
+  width: 100%;
+  background: rgba(224, 231, 255, 0.2);
+  border: 1px solid #e0e7ff;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 0.5em;
+}
+
+.disabled-input {
+  width: 100%;
+  font-size: 15px;
+  padding: 0.5em;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid #d1dbff;
+  color: #d1dbff;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.main-label {
+  color: #7055fc;
+}

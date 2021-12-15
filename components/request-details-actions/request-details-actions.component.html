@@ -1,0 +1,71 @@
+<mat-card-actions>
+  <form [formGroup]="requestForm">
+    <div>
+      <p class="request-form-label">
+        {{'procedureActions.title' | translate}}
+      </p>
+
+      <div fxLayout
+           fxLayoutAlign="start center"
+           fxLayoutGap="20px"
+           fxLayout.xs="column"
+           fxLayoutAlign.xs="left">
+        <mat-form-field class="datePicker">
+          <input matInput
+                 [matDatepicker]="since"
+                 placeholder="{{'procedureActions.since' | translate}}"
+                 formControlName="issuanceDate">
+          <mat-datepicker-toggle matSuffix
+                                 [for]="since"></mat-datepicker-toggle>
+          <mat-datepicker #since></mat-datepicker>
+        </mat-form-field>
+
+        <mat-form-field class="datePicker">
+          <input matInput
+                 [matDatepicker]="until"
+                 placeholder="{{'procedureActions.until' | translate}}"
+                 formControlName="expirationDate">
+          <mat-datepicker-toggle matSuffix
+                                 [for]="until"></mat-datepicker-toggle>
+          <mat-datepicker #until></mat-datepicker>
+        </mat-form-field>
+
+        <span>
+          <span class="no-expire-label">{{'procedureActions.notExpire' | translate}}</span>
+          <mat-slide-toggle formControlName="notExpire"
+                            (change)="onToggleNotExpire($event)"></mat-slide-toggle>
+        </span>
+
+      </div>
+    </div>
+
+    <div fxLayout="column">
+      <p class="request-form-label">
+        {{'procedureActions.schemeJson' | translate}}
+      </p>
+      <app-dynamic-form *ngIf="credential" [credential]="credential" (formReady)="formInitialized('template', $event)" ></app-dynamic-form>
+
+      <p class="request-form-label">
+        {{'procedureActions.reason' | translate}}
+      </p>
+      <mat-form-field>
+        <textarea matInput
+                  cdkTextareaAutosize
+                  cdkAutosizeMinRows="2"
+                  cdkAutosizeMaxRows="150"
+                  formControlName="reason"></textarea>
+      </mat-form-field>
+    </div>
+
+    <app-buttons [isDisabled]="requestForm.invalid"
+                 [isLoadingBtnCancel]="loadingApprove"
+                 [isLoadingBtnCreate]="loadingDenegated"
+                 [textButtonCancel]="'button.reject' | translate | titlecase"
+                 [textButtonOk]="'button.ok' | translate | titlecase"
+                 (createAction)="onClickButton('ACCEPTED')"
+                 (cancelAction)="onClickButton('DENEGATED')">
+
+    </app-buttons>
+  </form>
+
+</mat-card-actions>

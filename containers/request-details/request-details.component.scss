@@ -1,0 +1,63 @@
+.header-presentation {
+  height: 100px;
+}
+
+.text-presentation-subtitle {
+  color: #8798AD;
+}
+
+.title-section {
+  border-left: 3px solid #7055fc;
+  padding: 8px;
+  color: #8798ad;
+  font-weight: 900;
+  font-size: 14px;
+}
+
+
+comments > * {
+  width: 100%;
+}
+
+.caja{
+  width: 315px;
+  max-width: 320px;
+  height: 180px;
+  margin-bottom: 20px;
+  background: #7055fc;
+}
+
+.container-content {
+  margin-top: 20px;
+}
+
+.container-claims-header{
+  border: 1px solid red;
+  border-left: 3px solid #7055fc;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.budget {
+  color: #8798ad;
+}
+
+mat-divider {
+  background: #DDD8FD;
+}
+
+.actions {
+  margin-top: 90px;
+}
+
+.procedure-label {
+  color: #8798AD;
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 1em;
+    font-weight: 500;
+  }
+}
+

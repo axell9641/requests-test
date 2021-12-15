@@ -1,0 +1,13 @@
+<mat-grid-list
+  cols="{{ colGrid }}"
+  rowHeight="{{ rowHeight }}"
+  [gutterSize]="4"
+>
+  <mat-grid-tile *ngFor="let card of cards">
+    <app-stats-item
+      [item]="card"
+      fxFill
+      (click)="onClickStats(card.state)"
+    ></app-stats-item>
+  </mat-grid-tile>
+</mat-grid-list>
