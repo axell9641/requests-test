@@ -1,0 +1,32 @@
+$heigth-base: 40px;
+
+.container {
+  padding: 30px;
+}
+
+.img-message {
+  height: 120px;
+}
+
+.small {
+  height: 1 * $heigth-base;
+}
+
+.medium {
+  height: 2 * $heigth-base;
+}
+
+.large {
+  height: 3 * $heigth-base;
+}
+
+.extra-large {
+  height: 4 * $heigth-base;
+}
+
+.description {
+  color: #8994b7;
+  font-size: 1rem;
+  margin: 1rem;
+  text-align: center;
+}

@@ -1,0 +1,26 @@
+
+  <h1 mat-dialog-title fxLayoutAlign="end" class="font-primary">
+    <mat-icon (click)="onClickClose()" class="clickeable">close</mat-icon>
+  </h1>
+
+  <div mat-dialog-content class="message">
+    {{data.questionTextModal}}
+  </div>
+
+  <div
+    mat-dialog-actions fxLayoutAlign="center"
+    fxLayout.xs="column"
+    fxLayoutAlign.xs="center center"
+    class="action-modal"
+    fxLayoutGap="20px">
+
+    <button
+      class="radious-rounded large-button"
+      color="primary"
+      mat-raised-button
+      [mat-dialog-close]="true"
+      cdkFocusInitial>
+      {{data.textButtonModal | titlecase}}
+    </button>
+
+  </div>

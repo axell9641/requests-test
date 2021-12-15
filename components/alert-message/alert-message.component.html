@@ -1,0 +1,7 @@
+<div class="container" fxLayout="column" fxLayoutAlign="center center" fxFlex>
+  <img src="assets/{{alertMessage.img}}.svg" alt="image message" [ngClass]="alertMessage.height"
+    *ngIf="alertMessage.img">
+  <div class="description">
+    {{alertMessage.message | translate}}
+  </div>
+</div>
