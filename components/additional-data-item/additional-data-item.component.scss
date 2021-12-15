@@ -1,0 +1,23 @@
+.images {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 293px));
+  gap: 28px;
+}
+
+.container-image {
+  height: 300px;
+  width: 300px;
+}
+.container-image img {
+  height: 100%;
+  vertical-align: top;
+}
+
+.additional-data-body-label {
+  color: #b0bac9;
+  font-size: 14px;
+}
+
+.additional-data-body-value {
+  margin: 8px 0;
+}

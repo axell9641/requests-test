@@ -1,0 +1,18 @@
+<div class="additional-data-title">
+  {{ 'additionalData.title' | translate }}
+</div>
+
+<div class="additional-data-body">
+  <!-- <ng-container *ngFor="let item of aditionalData">
+    <div class="additional-data-body-label">
+      {{ 'credential.' + item.key | translate }}:
+    </div>
+    <div class="additional-data-body-value">
+
+      {{ item.value }}
+      {{ item.value | json }}
+    </div>
+  </ng-container> -->
+  <app-additional-data-item *ngFor="let item of aditionalData" [item]="item">
+  </app-additional-data-item>
+</div>

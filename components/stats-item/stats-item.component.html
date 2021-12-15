@@ -1,0 +1,13 @@
+<div class="container-item-statistics">
+    <mat-card class="clickeable body-item-statistics" fxFlex>
+      <mat-card-content fxLayoutAlign="start" fxFlex>
+        <div fxLayout="row" fxLayoutAlign="start center" fxFill>
+          <mat-icon class="statistics-icon">{{item.icon}}</mat-icon>
+          <div fxFlex="1 1 auto">
+            <div class="statistics-number">{{item.quantity | shortNumber}}</div>
+            <div class="statistics-description">{{item.description | translate}}</div>
+          </div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+</div>

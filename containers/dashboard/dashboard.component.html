@@ -1,0 +1,13 @@
+<app-stats
+  [cards]="cards"
+  (cardClicked)="onClickStats($event)"
+  *ngIf="!showCategoriesEmpty"
+></app-stats>
+<app-alert-message
+  *ngIf="showCategoriesEmpty"
+  [alertMessage]="categoriesEmpty"
+></app-alert-message>
+
+<div class="list-request">
+  <app-request-list [stateRequest]="stateRequest"></app-request-list>
+</div>

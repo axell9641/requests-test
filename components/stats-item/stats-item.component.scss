@@ -1,0 +1,43 @@
+.container-item-statistics {
+  height: 100%;
+  width: 100%;
+}
+
+.body-item-statistics {
+  margin: 5px;
+}
+
+.statistics-number {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.statistics-description {
+  color: #8798ad;
+}
+
+.statistics-icon {
+  color: #7055fc;
+  background: #eee6ff;
+  padding: 10px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+@media (max-width: 767px) {
+  .statistics-icon {
+    padding: 8px;
+    margin-right: 8px;
+  }
+}
+
+@media (max-width: 375px) {
+  .statistics-number {
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  mat-card {
+    padding: 10px;
+  }
+}

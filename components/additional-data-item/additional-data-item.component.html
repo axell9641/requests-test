@@ -1,0 +1,23 @@
+<div class="additional-data-body-label">
+  {{ 'credential.' + item.key | translate }}:
+</div>
+<div class="additional-data-body-value">
+  <div [ngSwitch]="item.key">
+    <div *ngSwitchCase="'images'">
+      <div class="images">
+        <figure *ngFor="let image of item.value" class="container-image">
+          <img
+            [src]="sanitizeImg(image.url)"
+            alt="{{ image.alternativeText }}"
+          />
+          <p>
+            {{ image.title }}
+          </p>
+        </figure>
+      </div>
+    </div>
+    <div *ngSwitchDefault>
+      {{ item.value | titlecase }}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,55 @@
+.container-list-requests {
+  width: 100%;
+}
+
+.header-list-requests {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  justify-items: center;
+  align-items: center;
+  height: 50px;
+  column-gap: 5px;
+}
+
+.body-list-requests {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: auto;
+  justify-items: center;
+  align-items: center;
+  min-height: 80px;
+  background: white;
+  margin-bottom: 10px;
+  column-gap: 5px;
+  word-break: break-all;
+  // cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .container-list-requests {
+    font-size: 12px;
+  }
+}
+
+.loader-request {
+  margin-top: 50px;
+}
+
+table {
+  width: 100%;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+.status {
+  padding: 0.6em 1.2em;
+  border-radius: 20px;
+  color: white;
+  border: 1px solid #f4f6fc;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}

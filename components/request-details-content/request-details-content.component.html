@@ -1,0 +1,10 @@
+<mat-card-content class="container-content">
+  <div fxLayout="row wrap" fxLayoutAlign="start start">
+    <app-credential class="container-credential" *ngFor="let credential of credentials" [credential]="credential"
+      [procedure]="request">
+    </app-credential>
+  </div>
+</mat-card-content>
+
+<app-request-details-additional-data [aditionalData]="additionalDataFormated">
+</app-request-details-additional-data>

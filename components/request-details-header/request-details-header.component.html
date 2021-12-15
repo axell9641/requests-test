@@ -1,0 +1,20 @@
+<div fxLayout="row" fxLayoutAlign="space-between">
+
+  <div class="content" fxFlex="1 0 1" fxLayout="row" fxLayoutAlign="space-between center">
+    <div class="header-detail">
+      <div class="procedure-label">{{'procedureHeader.id' | translate}}</div>
+      <h2>{{request.idRequest.slice(0,4)}}</h2>
+    </div>
+    <div class="">
+      <div class="procedure-label">{{'procedureHeader.createdAt' | translate}}</div>
+      <h2>{{request.creadedAt | date:'mediumDate'}}</h2>
+    </div>
+  </div>
+
+  <div class="close" (click)="onClickClose()">
+    <mat-icon>close</mat-icon>
+  </div>
+
+</div>
+
+<mat-divider></mat-divider>

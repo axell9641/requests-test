@@ -1,0 +1,6 @@
+<div class="input-container" [formGroup]="formGroup">
+    <label [class]="dynamicInput.disabled ? 'disabled-label' : 'label-input'" [for]="label">
+      <span [class]="dynamicInput.disabled ? 'disabled-label' : 'main-label'">{{label}}</span>{{description}}
+    </label>
+    <input type="text" [formControlName]="label" [class]="dynamicInput.disabled ? 'disabled-input' : 'dynamic-input'">
+</div>
