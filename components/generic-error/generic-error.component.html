@@ -1,0 +1,28 @@
+
+  <div mat-dialog-content class="message">
+    {{data.message | translate}}
+  </div>
+
+  <div
+    mat-dialog-actions fxLayoutAlign="center"
+    fxLayout.xs="column"
+    fxLayoutAlign.xs="center center"
+    class="action-modal"
+    fxLayoutGap="20px">
+
+    <button
+      class="radious-rounded large-button"
+      color="accent"
+      mat-raised-button
+      [mat-dialog-close]="false">{{'button.ok' | translate | titlecase}}
+    </button>
+
+    <button
+      class="radious-rounded large-button"
+      color="primary"
+      mat-raised-button
+      [mat-dialog-close]="true"
+      cdkFocusInitial>{{'button.retry' | translate | titlecase}}
+    </button>
+
+  </div>
