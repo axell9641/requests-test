@@ -1,0 +1,33 @@
+.procedure-label {
+  color: #8798AD;
+
+}
+
+.content {
+  padding: 0 30px;
+}
+
+
+.close {
+  cursor: pointer;
+  color: #7055fc;
+}
+
+@media (max-width: 767px) {
+  .procedure-label {
+    font-size: 12px;
+  }
+
+  .content {
+    padding: 0 0px;
+  }
+
+  .header-detail {
+    word-break: break-all;
+  }
+
+  h2 {
+    font-size: 0.8em;
+    color: #2e384d;
+  }
+}

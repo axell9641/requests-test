@@ -1,0 +1,85 @@
+<div class="container-list-requests">
+  <div class="grid-container">
+    <mat-form-field>
+      <input
+        matInput
+        (keyup)="applyFilter($event.target.value)"
+        placeholder="Filtrar"
+      />
+    </mat-form-field>
+    <table mat-table matSort [dataSource]="dataSource" class="mat-elevation-z8">
+      <!-- <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>ID</th>
+        <td mat-cell *matCellDef="let request">
+          <p (click)="onClickRequest(request)">
+            {{ request.id }}
+          </p>
+        </td>
+      </ng-container> -->
+
+      <ng-container matColumnDef="subject">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Credencial</th>
+        <td mat-cell *matCellDef="let request">
+          <p (click)="onClickRequest(request)">
+            {{ request.subject }}
+          </p>
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="office">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Oficina</th>
+        <td mat-cell *matCellDef="let request">
+          <p (click)="onClickRequest(request)">
+            {{ request.country | titlecase }}
+          </p>
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="group">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>
+          Grupo conocimiento
+        </th>
+        <td mat-cell *matCellDef="let request">
+          <p (click)="onClickRequest(request)">
+            {{ request.group }}
+          </p>
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="date">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Fecha</th>
+        <td mat-cell *matCellDef="let request">
+          <p (click)="onClickRequest(request)">
+            {{ request.date | date }}
+          </p>
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="status">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Estado</th>
+        <td mat-cell *matCellDef="let request">
+          <span
+            class="status"
+            [ngStyle]="{ background: colors[request.status] }"
+            (click)="onClickRequest(request)"
+          >
+            {{ request.status }}
+          </span>
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>
+    <mat-paginator
+      [pageSizeOptions]="[10, 25, 100]"
+      class="mat-elevation-z8"
+    ></mat-paginator>
+  </div>
+  <ng-container *ngIf="!isFindingRequest">
+    <app-alert-message
+      [alertMessage]="'alertMessage'"
+      *ngIf="showRequestEmpty"
+    ></app-alert-message>
+  </ng-container>
+</div>

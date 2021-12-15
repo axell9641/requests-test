@@ -1,0 +1,17 @@
+<h1>{{'procedure.title' | translate}}</h1>
+<mat-card>
+  <app-request-details-header [request]="requestDetailsHeader">
+  </app-request-details-header>
+
+  <app-request-details-content [credentials]="credentials"
+                               [request]="requestResponse.procedure"
+                               [aditionalData]="requestResponse.requirements.additionalsData"> >
+  </app-request-details-content>
+
+  <app-request-details-actions [loadingApprove]="loadingApprove"
+                               [loadingDenegated]="loadingDenegated"
+                               [schemaCredential]="schemaCredential"
+                               (completeForm)="onCompleteForm($event)">
+  </app-request-details-actions>
+
+</mat-card>

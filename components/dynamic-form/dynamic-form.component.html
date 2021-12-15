@@ -1,0 +1,13 @@
+<div class="container-recursive" [formGroup]="dynamicForm">
+  <div class="form-group group-inputs dynamic-form-container" *ngFor="let key of credentialKeys(dynamicForm)">
+    <div class="dynamic-input-container" *ngIf="!valueIsObject(key)">
+      <app-dynamic-input *ngIf="key" [formGroup]="dynamicForm" [description]="label" [label]="key" [claim]="getClaim(key)"
+        (formReady)="inputInitialized('key', $event)"></app-dynamic-input>
+    </div>
+    <div *ngIf="valueIsObject(key)">
+      <app-dynamic-form recursiveForm [label]="label ? (' / ' + key + label) : ' / ' + key" *ngIf="key" [credential]="getClaim(key)" (formReady)="formInitialized(key, $event)">
+      </app-dynamic-form>
+    </div>
+  </div>
+</div>
+
