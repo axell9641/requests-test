@@ -1,0 +1,118 @@
+{
+  "stats": {
+    "approved": "Approved requests",
+    "total": "Total requests",
+    "pending": "Pending requests",
+    "denegated": "Rejected  requests",
+    "success": "Delivered requests",
+    "isEmpty": "Currently, no requests have been generated"
+  },
+  "button": {
+    "ok": "accept",
+    "cancel": "cancel",
+    "reject": "reject",
+    "retry": "retry",
+    "delete": "delete",
+    "view": "see more",
+    "edit": "edit",
+    "save": "save",
+    "removeSelection": "remove selection",
+    "newProcedure": "new procedure"
+  },
+  "modal": {
+    "deleteProcedure": "Are you sure you want to delete this procedure?",
+    "rejectRequest": "Are you sure you want to reject this request?"
+  },
+  "status": {
+    "CREATED": "new",
+    "DELETED": "rejected",
+    "REJECTED": "rejected",
+    "SEND_VALIDATE": "validating",
+    "VALIDATED": "validated",
+    "APPROVED": "approved",
+    "SUCCESS": "generated",
+    "TOTAL": "total"
+  },
+  "listRequest": {
+    "headerTitle": {
+      "id": "ID",
+      "subject": "SUBJECT",
+      "country": "COUNTRY",
+      "date": "REQUEST",
+      "status": "STATUS"
+    },
+    "labelID": "id",
+    "labelSubject": "subject",
+    "labelCreatedAt": "requested",
+    "labelStatus": "status",
+    "withoutRequest": "You have not pending requests"
+  },
+  "listProcedure": {
+    "title": "Procedures",
+    "labelID": "id",
+    "labelSubject": "procedure",
+    "expandTable": "expand table"
+  },
+  "close": "close",
+  "procedure": {
+    "title": "Request for credentials"
+  },
+  "procedureHeader": {
+    "id": "ID of the request",
+    "createdAt": "Validity date"
+  },
+  "procedureActions": {
+    "title": "Validity date",
+    "since": "Emission date",
+    "until": "Expiration date",
+    "schemeJson": "Scheme",
+    "reason": "Reason",
+    "notExpire": "This credential not expire"
+  },
+  "credential": {
+    "attribute": "Attributes",
+    "firstname": "Name",
+    "lastname": "Lastname",
+    "email": "Email",
+    "telephone": "Phone number",
+    "birthDate": "Date of birth",
+    "documentId": "Identity document",
+    "address": "Address",
+    "worksFor": "Employment",
+    "memberOf": "Membership",
+    "represents": "Organization",
+    "key": "Public key",
+    "sameAs": "Profile",
+    "tokenAccount": "Wallet",
+    "name": "Name"
+  },
+  "additionalData": {
+    "requestName": "Request name",
+    "title": "Additional requeriments",
+    "credentials": "credentials",
+    "newFormat": "Add a new format",
+    "credentialsRequired": "Select the credentials your request requires",
+    "addRequirement": "Add requirement",
+    "requirementName": "Requirement name"
+  },
+  "requestAction": {
+    "approved": "The request has been approved",
+    "accredited": "The request has been accredited",
+    "shared": "The request has been shared",
+    "rejected": "The request has been rejected"
+  },
+  "error": {
+    "generic": "An error has occurred, please try later"
+  },
+  "login": {
+    "title": "Login with Kaytrust Wallet",
+    "subtitle": "To login you need to use Kaytrust Wallet and follow these steps:",
+    "description1": "Open Kaytrust Wallet on your mobile device",
+    "description2": "Press the camera button in the main menu",
+    "description3": "Point your device to the screen to capture the QR code",
+    "description4": "Follow each of the indications of Kaytrust Wallet"
+  },
+  "footer": {
+    "copyright": "All rights reserved."
+  }
+}

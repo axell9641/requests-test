@@ -1,0 +1,120 @@
+{
+  "stats": {
+    "approved": "Solicitudes aprobadas",
+    "total": "Total de solicitudes",
+    "pending": "Solicitudes pendientes",
+    "denegated": "Solicitudes rechazadas",
+    "success": "Solicitudes entregadas",
+    "isEmpty": "Actualmente, no se han generado solicitudes"
+  },
+  "button": {
+    "ok": "aceptar",
+    "create": "crear",
+    "cancel": "cancelar",
+    "reject": "rechazar",
+    "retry": "reintentar",
+    "delete": "eliminar",
+    "view": "ver más",
+    "edit": "editar",
+    "save": "guardar",
+    "removeSelection": "eliminar selección",
+    "newProcedure": "nuevo trámite"
+  },
+  "modal": {
+    "deleteProcedure": "¿Estás seguro que quieres eliminar este trámite?",
+    "rejectRequest": "¿Estás seguro que quieres cancelar esta solicitud?"
+  },
+  "status": {
+    "CREATED": "nueva",
+    "DELETED": "rechazado",
+    "REJECTED": "rechazado",
+    "SEND_VALIDATE": "validando",
+    "VALIDATED": "validada",
+    "APPROVED": "aprobada",
+    "SUCCESS": "generada",
+    "TOTAL": "total"
+  },
+  "listRequest": {
+    "headerTitle": {
+      "id": "ID",
+      "country": "DIVISION",
+      "subject": "ASUNTO",
+      "date": "SOLICITADO",
+      "status": "ESTATUS"
+    },
+    "labelID": "id",
+    "labelSubject": "asunto",
+    "labelCreatedAt": "solicitado",
+    "labelStatus": "estado",
+    "withoutRequest": "No tienes solicitudes pendientes"
+  },
+  "listProcedure": {
+    "title": "Trámites",
+    "labelID": "id",
+    "labelSubject": "trámite",
+    "expandTable": "expandir tabla"
+  },
+  "close": "cerrar",
+  "procedure": {
+    "title": "Datos del certificado a entregar"
+  },
+  "procedureHeader": {
+    "id": "ID de la solicitud",
+    "createdAt": "Fecha de solicitud"
+  },
+  "procedureActions": {
+    "title": "Fecha de validez",
+    "since": "Fecha de emisión",
+    "until": "Fecha de expiración",
+    "schemeJson": "Esquema",
+    "reason": "Motivo",
+    "notExpire": "Esta credencial no expira"
+  },
+  "credential": {
+    "attribute": "Atributos",
+    "firstname": "Nombre",
+    "lastname": "Apellidos",
+    "email": "Email",
+    "telephone": "Teléfono",
+    "birthDate": "Fecha de nacimiento",
+    "documentId": "Documento de identidad",
+    "address": "Dirección",
+    "worksFor": "Trabajo",
+    "memberOf": "Membresía",
+    "represents": "Organización",
+    "key": "Llave pública",
+    "sameAs": "Perfil",
+    "tokenAccount": "Billetera",
+    "name": "Nombre",
+    "office": "Oficina"
+  },
+  "additionalData": {
+    "requestName": "Nombre de la solicitud",
+    "title": "Requisitos adicionales",
+    "credentials": "credenciales",
+    "newFormat": "Agregar un nuevo formato",
+    "credentialsRequired": "Seleccione las credenciales que requiera su solicitud",
+    "addRequirement": "Agregar requisito",
+    "requirementName": "Nombre del requisito"
+  },
+  "requestAction": {
+    "approved": "La solicitud ha sido aprobada",
+    "accredited": "La solicitud ha sido acreditada",
+    "shared": "La solicitud ha sido compartida",
+    "rejected": "La solicitud ha sido rechazada"
+  },
+  "error": {
+    "generic": "Ha ocurrido un error, por favor intente más tarde."
+  },
+  "login": {
+    "title": "Inicio de sesión mediante Kaytrust",
+    "subtitle": "Para iniciar sesión es necesario usar Kaytrust Wallet y seguir estos pasos:",
+    "description1": "Abrir Kaytrust Wallet en tu dispositivo mobile",
+    "description2": "Presiona el botón de la cámara en el menú principal",
+    "description3": "Apunta tu dispositivo a la pantalla para capturar el código QR",
+    "description4": "Sigue cada una de las indicaciones de Kaytrust Wallet"
+  },
+  "footer": {
+    "copyright": "Todos los derechos reservados."
+  }
+}
